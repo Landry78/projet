@@ -1,20 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Grid, Button } from '@mui/material';
-import Navbar from './components/Navbar';
-import UserMenu from './components/UserMenu';
-import DashboardDrawer from './components/DashboardDrawer';
-import Footer from './components/Footer.jsx';
+import Navbar from '../../Navbar.jsx';
+import LUserMenu from './LUserMenu.jsx';
+import DashboardDrawer from '../../DashboardDrawer.jsx';
+import Footer from '../../Footer.jsx';
+import '../../style.css';
 
-import './components/style.css'
-
-const OwnerPage = () => {
+const locataire= () => {
   const navigate = useNavigate();
-  const ownerName = 'romeo';
+  const ownerName = 'Romeo';
 
-  const handlePublishClick = () => {
-    navigate('/publish');
-  };
+  
 
   return (
     <div>
@@ -24,13 +21,11 @@ const OwnerPage = () => {
           <Grid item xs={3}>
           <DashboardDrawer />
           </Grid>
-          <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="contained" color="primary" onClick={handlePublishClick}>Publier une offre</Button>
-          </Grid>
+          
           <Grid item xs={3}sx={{ textAlign: 'right' }}>
           <div className="right-section">
           <span className="owner-name">{ownerName}</span>
-            <UserMenu />
+            <LUserMenu />
             </div>
           </Grid>
         </Grid>
@@ -40,4 +35,4 @@ const OwnerPage = () => {
   );
 };
 
-export default OwnerPage;
+export default locataire;

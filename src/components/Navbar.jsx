@@ -17,6 +17,12 @@ const Navbar = () => {
           <Link href ="/admin" color="inherit" variant="button">
             administrateur
           </Link>
+          <Link href ="/locataire" color="inherit" variant="button">
+            locataire
+          </Link>
+          <Link href ="/inscrire" color="inherit" variant="button">
+            Inscription
+          </Link>
         </Box>
       </Toolbar>
     </AppBar>

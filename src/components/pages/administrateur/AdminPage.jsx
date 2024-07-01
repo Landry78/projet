@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Grid } from '@mui/material';
-import Navbar from './components/Navbar'; // Importez le composant Navbar existant
-import AdminMenu from './components/AdminMenu';
-import SUserMenu from './components/SUserMenu';
+import Navbar from '../../Navbar'; // Importez le composant Navbar existant
+import AdminMenu from './AdminMenu';
+import SUserMenu from './SUserMenu';
 import { FoodBankTwoTone } from '@mui/icons-material';
-import Footer from './components/Footer';
+import Footer from '../../Footer';
 
 
 const AdminPage = () => {
+   const ownerName = 'Romeo';
   return (
     <div>
       <Navbar /> {/* Utilisation du même Navbar que pour le propriétaire */}
@@ -16,12 +17,18 @@ const AdminPage = () => {
           <Grid item xs={3}>
             <AdminMenu />
           </Grid>
-          <Grid item xs={9}>
+          <Grid item xs={6}>
             {/* Contenu principal ici */}
           </Grid>
-        </Grid>
+        <Grid item xs={3}sx={{ textAlign: 'right' }}>
+          <div className="right-section">
+          <span className="owner-name">{ownerName}</span>
+            <SUserMenu />
+            </div>
+          </Grid>
+          </Grid>
       </Container>
-      <SUserMenu />
+      
       <Footer/>
     </div>
   );

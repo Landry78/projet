@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Box, Typography, Paper } from '@mui/material';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer.jsx';
-import PublishForm from './components/PublishForm';
+import Navbar from '../../Navbar.jsx';
+import Footer from '../../Footer.jsx';
+import PublishForm from './PublishForm.jsx';
 
 const PublishPage = () => {
   return (

@@ -5,9 +5,11 @@ import EditIcon from '@mui/icons-material/Edit';
 import LogoutIcon from '@mui/icons-material/Logout';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
-import './style.css';
+import '../../style.css'
+import { Link } from 'react-router-dom';
 
-const UserMenu = () => {
+
+const LUserMenu = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [profilePicture, setProfilePicture] = useState(localStorage.getItem('profilePicture') || '');
   const [imagePreview, setImagePreview] = useState(profilePicture);
@@ -55,7 +57,7 @@ const UserMenu = () => {
           />
           <label htmlFor="profile-image-upload">
             <IconButton component="span">
-              Modifier<EditIcon />
+              <EditIcon />
             </IconButton>
           </label>
         </div>
@@ -79,6 +81,12 @@ const UserMenu = () => {
           <Typography variant="inherit">Supprimer compte</Typography>
         </MenuItem>
         <MenuItem onClick={handleMenuClose}>
+            <ListItemIcon>
+              <AccountCircleIcon fontSize="small" />
+            </ListItemIcon>
+            <Link to="/become-owner">Devenir propriétaire</Link>
+          </MenuItem>
+        <MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
             <LogoutIcon fontSize="small" />
           </ListItemIcon>
@@ -89,4 +97,4 @@ const UserMenu = () => {
   );
 };
 
-export default UserMenu;
+export default  LUserMenu;

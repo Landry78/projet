@@ -5,7 +5,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import LogoutIcon from '@mui/icons-material/Logout';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
-import './style.css';
+import '../../style.css'
 
 const UserMenu = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -34,7 +34,7 @@ const UserMenu = () => {
   };
 
   return (
-    <div className='SUserMenu'>
+    <div className='UserMenu'>
       <IconButton onClick={handleMenuOpen}>
         <Avatar src={imagePreview} />
         <ArrowDropDownIcon />
@@ -60,6 +60,24 @@ const UserMenu = () => {
           </label>
         </div>
         <Divider />
+        <MenuItem onClick={handleMenuClose}>
+          <ListItemIcon>
+            <AccountCircleIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Consulter vos informations</Typography>
+        </MenuItem>
+        <MenuItem onClick={handleMenuClose}>
+          <ListItemIcon>
+            <EditIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Modifier compte</Typography>
+        </MenuItem>
+        <MenuItem onClick={handleMenuClose}>
+          <ListItemIcon>
+            <DeleteIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Supprimer compte</Typography>
+        </MenuItem>
         <MenuItem onClick={handleMenuClose}>
           <ListItemIcon>
             <LogoutIcon fontSize="small" />
