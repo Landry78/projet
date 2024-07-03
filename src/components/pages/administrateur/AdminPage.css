@@ -1,0 +1,35 @@
+.admin-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px; /* Adjust according to Navbar height */
+  }
+  
+  .admin-sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .admin-main {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .admin-user-section {
+    width: 20%;
+    text-align: right;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .owner-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  

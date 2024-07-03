@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color:white;
+  color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+
+   
+font-family: 'Courier New', Courier, monospace; /* Changez la police pour une plus attrayante */
+
+
+}
+
+.logo {
+  width: 120px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color:black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.navbar-right a {
+  margin-left: 15px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace; /* Changez la police pour une plus attrayante */
+  font-weight: bold;
+  margin-right: 10px;
+   
+}
+.first{
+  color: rgb(37, 15, 240);
+}
+
+
+
+  
+  
+  
+  
+
+
+
+

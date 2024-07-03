@@ -1,8 +1,13 @@
 /* Inscription.css */
 
-body {
+.inscrire {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('src/assets/location.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
   }
   
   .navbar {
@@ -96,4 +101,21 @@ body {
     text-align: center;
     display: block;
   }
+  .password-container {
+    position: relative;
+    
+    align-items: center;
+  }
+  
+ 
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    color: #333; /* Couleur de l'icône */
+  }
+  
   

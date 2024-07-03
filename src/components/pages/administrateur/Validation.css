@@ -1,0 +1,49 @@
+.validation-container {
+    padding: 20px;
+    margin-top: 60px; /* Ajustez selon la hauteur de la navbar */
+  }
+  
+  .validation-table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  .validation-table th, .validation-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .validation-h1{
+    text-align: center;
+  }
+  .validation-table th {
+    background-color: #4CAF50;
+    text-align: left;
+    color: white;
+  }
+  
+  .validation-table td {
+    text-align: left;
+  }
+  
+  .validation-table button {
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .admin-user-section {
+    width: 20%;
+    text-align: right;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .owner-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

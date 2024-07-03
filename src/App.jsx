@@ -8,11 +8,15 @@ import Locataire from './components/pages/locataire/Locataire';
 import Validation from './components/pages/administrateur/Validation';
 import ListeP from './components/pages/administrateur/ListeP';
 import Inscription from './components/pages/inscription/inscription';
+import Messagerie from './messagerie/Messagerie';
+import Home from './components/pages/home/Home';
+import Contact from './components/pages/contact/Contact';
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<OwnerPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/proprietaire" element={<OwnerPage />} />
         <Route path="/inscrire" element={<Inscription />} />
         <Route path="/locataire" element={<Locataire />} />
         <Route path="/publish" element={<PublishPage />} />
@@ -20,6 +24,9 @@ const App = () => {
         <Route path="/validate" element={<Validation />} />
         <Route path="/listeP" element={<ListeP />} />
         <Route path="/become-owner" element={<BecomeOwnerForm />} />
+        <Route path="/message" element={<Messagerie />} />
+        <Route path="/contact" element={<Contact />} />
+        
       </Routes>
     </Router>
   );

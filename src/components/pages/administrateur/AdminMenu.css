@@ -1,0 +1,81 @@
+.admin-container {
+    display: flex;
+  }
+  
+  .admin-sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .admin-sidebar h2 {
+    text-align: center;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .menu-item svg {
+    margin-right: 10px;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .menu-link:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .owners-table {
+        
+    width: 80%; /* Ajouter une limite de largeur maximale */
+    border-collapse: collapse;
+    margin: 0 auto; /* Centrer le tableau */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .owners-table th, .owners-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Augmenter l'espace intérieur */
+  }
+  
+  .owners-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .owners-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .owners-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .owners-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  

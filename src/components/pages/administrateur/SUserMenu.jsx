@@ -48,7 +48,7 @@ const UserMenu = () => {
           <Avatar src={imagePreview} className="profile-picture" />
           <input
             accept="image/*"
-            style={{ display: 'none' }}
+            
             id="profile-image-upload"
             type="file"
             onChange={handleImageChange}

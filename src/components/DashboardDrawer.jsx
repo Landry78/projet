@@ -5,6 +5,7 @@ import BedIcon from '@mui/icons-material/Bed';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
+import { Link } from 'react-router-dom';
 
 import './style.css'; // Importez les styles CSS pour le DashboardDrawer
 
@@ -40,7 +41,7 @@ const DashboardDrawer = () => {
             </ListItem>
             <ListItem button className="drawer-item">
               <ListItemIcon><MailIcon /></ListItemIcon>
-              <ListItemText className="drawer-item-text" primary="Messagerie" />
+              <Link to='/message' className="drawer-item-text" primary="Messagerie" >Messagerie</Link>
             </ListItem>
           </List>
         </div>
